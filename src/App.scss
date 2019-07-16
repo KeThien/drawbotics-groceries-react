@@ -1,0 +1,62 @@
+/* colors variables */
+:root {
+  --main-color: #068D9D;
+  --second-color: #6D9DC5;
+  --darken-color: #53599A;
+  --medium-color: #80DED9;
+  --ligther-color: #AEECEF;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+.container {
+  padding: 0 1rem;
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  background: var(--second-color);
+  color: #fff;
+  padding: 7px 20px;
+  cursor: pointer;
+  
+}
+
+.btn:hover {
+  background: var(--medium-color);
+}
+
+// HEADER 
+.header {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--main-color);
+  color: white;
+}
+
+//NAVBAR Footer
+.navbar {
+  padding: 20px;
+  background-color: var(--medium-color);
+  color: white;
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  .btn {
+    margin: 0 5px;
+  }
+  a.active {
+    .btn {
+      background-color: var(--darken-color);
+    }
+  }
+  
+}
